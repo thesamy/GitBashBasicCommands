@@ -1,0 +1,26 @@
+git init 		 - initlize git directory.
+touch ''		 - add a new file to directory.
+
+git status 	 - see pending changes.
+git add . 		 - add all files.
+git add * 		 - add kind of files and ignore all other {   EXEMPLE: git add .cs  }.
+git commit -m ' '	 - commit all file pending and name the action.
+git commit -a -m ' '	 - add and commit pending file and changes.
+
+git branch 	 - add a new workspace with current files.
+git checkout ''	 - change to selected branch.
+git statsh 	 - when working on branch without commited changes, can use stash to store them and get back to them later.
+git statsh apply	 - show stashed file and changes in the working branch.
+
+Remote directory commands:
+
+[not a command] origin 	- the alias for the the directory URL.
+git remote 	     	- use on directory from github.
+git remove -v	     	- show github directory url's.
+git clone 'directory URL'	- download directory from github, to work localy.
+git fetch origin 		- get the directory changes for server since you cloned or fetched. [will download but will not merge!]
+git pull origin		- get the current state of the directory from server [will download and show the changes without merge!]
+git push origin master	- afther added the change, this will push the changes to the server to branch master.
+
+if not created yet:
+git remote add '[repo name]' https://github.com/thesamy/'[repo name on git hub]'
